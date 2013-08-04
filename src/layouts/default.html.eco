@@ -1,0 +1,71 @@
+---
+css: "/c/main.css"
+---
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js lt-ie10"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+<title><%= @document.title %></title>
+<link rel="shortcut icon" href="/favicon.ico" />
+<% for url in @assets('css'): %>
+<link rel="stylesheet" href="<%= url %>" />
+<% end %>
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+	<div class="wrapper">
+		<header class="page-header">
+			<h1 class="site-title">
+			<% if @document.url == '/index.html': %>
+				<span style="visibility: hidden;">Emmet LiveStyle</span>
+			<% else: %>	
+				<a href="/">Emmet LiveStyle</a>
+			<% end %>
+			</h1>
+			<nav>
+				<%- @partial('menu.html.eco', {menuItems: @generateMenu(@document.url)}) %>
+			</nav>
+
+			<div class="quickstart">
+				<h3>Quick start</h3>
+				<ol>
+					<li>Install “Emmet LiveStyle” plugin from Package Control in Sublime Text.</li>
+					<li>Install <a href="https://chrome.google.com/webstore/detail/diebikgmpmeppiilkaijjbdgciafajmg">extension for Google Chrome</a>.</li>
+					<li>Go to page you with to live edit.</li>
+					<li>In Sublime Text, open some CSS files.</li>
+					<li>In Chrome, open DevTools, go to LiveStyle panel and follow instructions</li>
+				</ol>
+
+				<p><a href="/install/">Full installation guide</a></p>
+			</div>
+		</header>
+		<section class="page-content">
+			<%- @content %>
+		</section>
+		<div class="clear"></div>
+		<footer class="page-footer">
+			<p class="small-text">Support: <a href="mailto:info@emmet.io">info@emmet.io</a><br />Created with <a href="https://github.com/bevry/docpad">DocPad</a> and <a href="http://gruntjs.com">Grunt.js</a><br />Minimal theme by <a href="https://github.com/orderedlist/minimal">orderedlist</a></p>
+			<p class="small-text"><a href="https://github.com/emmetio/livestyle-web/tree/master/src/documents<%= @document.url %>.md">View page source on GitHub</a></p>
+		</footer>
+	</div>
+	
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-4523560-9', 'emmet.io');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>
