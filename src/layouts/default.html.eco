@@ -39,7 +39,7 @@ css: "/c/main.css"
 				<ol>
 					<li>Install “LiveStyle” plugin from Package Control in Sublime Text.</li>
 					<li>Install <a href="https://chrome.google.com/webstore/detail/diebikgmpmeppiilkaijjbdgciafajmg">extension for Google Chrome</a>.</li>
-					<li>Go to page you with to live edit.</li>
+					<li>Go to page you wish to live edit.</li>
 					<li>In Sublime Text, open some CSS files.</li>
 					<li>In Chrome, open DevTools, go to LiveStyle panel and follow instructions</li>
 				</ol>
