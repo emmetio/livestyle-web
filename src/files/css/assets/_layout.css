@@ -289,6 +289,18 @@ hr {
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
 }
 
+.social {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	min-height: 90px;
+}
+
+.social__item {
+	margin: 10px 0;
+	padding: 0;
+}
+
 #disqus_thread {
 	margin-top: 20px;
 	padding-top: 20px;

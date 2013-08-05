@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Emmet LiveStyle
+title: Emmet LiveStyle — live bi-directional CSS edit of new generation
 ---
 # Emmet LiveStyle <span class="beta-badge">beta</span>
 
