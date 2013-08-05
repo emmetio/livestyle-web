@@ -4,7 +4,7 @@ title: Emmet LiveStyle
 ---
 # Emmet LiveStyle <span class="beta-badge">beta</span>
 
-Emmet LiveStyle is plugin for live bi-directional (editor↔browser) CSS editing of new generation. Currently, it works in Google Chrome, Safari and Sublime Text, more browsers and editors will be available later.
+Emmet LiveStyle is a plugin for live bi-directional (editor↔browser) CSS editing of new generation. Currently, it works in Google Chrome, Safari and Sublime Text, more browsers and editors will be available later.
 
 This video demonstrates the most powerful features of LiveStyle.
 
