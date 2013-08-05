@@ -11,7 +11,7 @@ You can install directly from Package Control.
 
 1. Install [Package Control](http://wbond.net/sublime_packages/package_control/installation) first.
 2. When installed, open Command Palette in ST editor and pick `Package Control: Install Repository` command.
-3. Find and install *Emmet LiveStyle* extension.
+3. Find and install `LiveStyle` extension.
 
 When installed, LiveStyle will automatically download require PyV8 extension. If you experience issues with automatic PyV8 installation, try to [install it manually](https://github.com/emmetio/pyv8-binaries#manual-installation).
 
