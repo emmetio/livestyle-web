@@ -62,11 +62,11 @@ It’s pretty easy to resolve SCSS nesting to plain CSS since it’s one-to-one 
 
 But I’m not saying it’s impossible. If LiveStyle gets enough attention and funding, I’ll do a research on how to make it possible.
 
-## Does it scales?
+## Does it scale?
 
 Like original Emmet, LiveStyle is written entirely in JavaScript and works in every modern JS environment. But it requires additional support from editor side.
 
-Basically, they it provide `on change` callback to detect text buffer changes and network connectivity. Unfortunately, not every editor supports these features so LiveStyle will not support all editors as Emmet does.
+Basically, they need to provide `on change` callback to detect text buffer changes and network connectivity. Unfortunately, not every editor supports these features so LiveStyle will not support all editors as Emmet does.
 
 ## Is it free?
 

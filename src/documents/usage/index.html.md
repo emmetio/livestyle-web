@@ -6,7 +6,7 @@ menuOrder: 3
 To start live CSS edit, simply follow these easy steps:
 
 1. Start Sublime Text and open CSS file or create new one.
-2. Start Chrome browser and go to the page you with to edit.
+2. Start Chrome browser and go to the page you wish to edit.
 3. Open DevTools, go to *LiveStyle* panel and check `Enable LiveStyle for current page` option.
 4. When enabled, you’ll see a list of page’s external stylesheets on the left and list of editor files on the right. Simply pick editor file that should be associated with browser one and you are done!
 
