@@ -74,7 +74,7 @@ No, LiveStyle will be a paid product, but it’s free during public beta test.
 
 ## How to use LiveStyle?
 
-Go to [Emmet LiveStyle: Installation and usage](./install.html)
+Go to [Emmet LiveStyle: Installation and usage](/install/)
 
 ## Bug reporting & feature requests
 
