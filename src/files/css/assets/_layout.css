@@ -307,6 +307,17 @@ hr {
 	border-top: 3px solid #e5e5e5;
 }
 
+.issue-report {
+	font-size: 2em;
+	border: 4px solid red;
+	padding: 15px;
+	margin: 35px -15px;
+	color: red;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+}
+
 @media print, screen and (max-width: 960px) {
 	body {
 		padding: 50px;
