@@ -22,7 +22,7 @@ The LiveStyle source patching concept introduces a number of new workflows that 
 
 It’s a basic one-to-one live edit mode: simply associate any external CSS file in browser with editor one and start editing. All your editor changes will be automatically reflected in browser and your DevTools updates will be reflected in editor.
 
-If your browser file is large enough, your editor updates might take some time to apply. If you want to speed things up or you don’t have external stylesheets on your, you can create a new stylesheet by pressing `Add file` button and use it for live update.
+If your browser file is large enough, your editor updates might take some time to apply. If you want to speed things up or you don’t have external stylesheets on your page, you can create a new stylesheet by pressing `Add file` button and use it for live update.
 
 ### Multi-view mode
 
