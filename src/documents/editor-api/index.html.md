@@ -231,3 +231,48 @@ When a file was renamed (for example, user saved newly created, untitled file), 
 	}
 }
 ```
+
+## Pushing unsaved changes
+
+A common use case in front-end development is when user has to reload current page to see changes in document. In this case, all unsaved changes in CSS will be lost.
+
+To solve the issue, **client** sends the following message on each page load event:
+
+```json
+{
+	"action": "requestUnsavedFiles",
+	"data": {
+		"files": ["file1.css", "file2.css"]
+	}
+}
+```
+
+The `files` key contains a list of editor files, *associated* with browser ones. These are absolute paths, sent in `id` or `updateFiles` messages.
+
+When **server** receives this message, it should create a payload of files were actually modified with there pristine and actual content. For untitled files, a pristine content should be an empty string. 
+
+Send payload to **client** that initiated `requestUnsavedFiles` request as follows:
+
+```json
+{
+	"action": "unsavedFiles",
+	"data": {
+		"files": [
+			{
+				"file": "file1.css",
+				"pristine": "body{padding:1px;}",
+				"content": "body{padding:2px;}"
+			},
+			{
+				"file": "<untitled:1>",
+				"pristine": "",
+				"content": "p{margin:10px;}"
+			}
+		]
+	}
+}
+```
+
+After receiving this message, **client** will calculate patches and silently apply them to associated browser files.
+
+> Note that user can disable this feature in LiveStyle preferences. In this case, `requestUnsavedFiles` message won’t be sent.
