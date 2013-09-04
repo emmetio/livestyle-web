@@ -307,6 +307,13 @@ hr {
 	border-top: 3px solid #e5e5e5;
 }
 
+#carbonads-container {
+	/* float: right; */
+	/* min-height: 215px; */
+	margin: 0 -15px 15px;
+	min-height: 120px;
+}
+
 .issue-report {
 	font-size: 2em;
 	border: 4px solid red;
