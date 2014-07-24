@@ -128,7 +128,7 @@ When patch is calculated, **server** should send `update` message to all connect
 {
 	"action": "update",
 	"data": {
-		"editorFile": "/path/to/file.css"
+		"editorFile": "/path/to/file.css",
 		"patch": […]
 	}
 }
