@@ -15,6 +15,8 @@ This is a new LiveStyle 0.9 public alpha release.
 
 ## Installation
 
+**Warning**: you have to remove previous versions of LiveStyle extension from Chrome and Sublime Text.
+
 ### Google Chrome Extension
 
 * Download [LiveStyle 0.9 Alpha](http://download.emmet.io/livestyle-alpha.crx)
