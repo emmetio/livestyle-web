@@ -4,7 +4,7 @@ layout: default
 <h1><%= @document.documentTitle or @document.title %></h1>
 <%- @content %>
 
-<div class="issue-report">Please report issues <a href="https://github.com/emmetio/livestyle-sublime/issues">here</a>. Page comments are really hard way to help you.</div>
+<!-- <div class="issue-report">Please report issues <a href="https://github.com/emmetio/livestyle-sublime/issues">here</a>. Page comments are really hard way to help you.</div> -->
 <div id="disqus_thread"></div>
 <script>
 var disqus_shortname = 'emmet-livestyle';
