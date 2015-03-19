@@ -1,12 +1,8 @@
 ---
-css: "/c/main.css"
+css: "/css/main.css"
 ---
 <!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie10 lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie10 lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie10 lt-ie9"> <![endif]-->
-<!--[if IE 9]>         <html class="no-js lt-ie10"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html class="no-js">
 <head>
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="chrome=1" />
@@ -16,9 +12,6 @@ css: "/c/main.css"
 <link rel="stylesheet" href="<%= url %>" />
 <% end %>
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-<!--[if lt IE 9]>
-<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
 </head>
 <body>
 	<div class="wrapper">
@@ -66,7 +59,7 @@ css: "/c/main.css"
 		</section>
 		<div class="clear"></div>
 		<footer class="page-footer">
-			<p class="small-text">Support: <a href="mailto:info@emmet.io">info@emmet.io</a><br />Created with <a href="https://github.com/bevry/docpad">DocPad</a> and <a href="http://gruntjs.com">Grunt.js</a><br />Minimal theme by <a href="https://github.com/orderedlist/minimal">orderedlist</a></p>
+			<p class="small-text">Support: <a href="mailto:info@emmet.io">info@emmet.io</a><br />Created with <a href="https://github.com/bevry/docpad">DocPad</a> and <a href="http://gulpjs.com">Gulp.js</a><br />Minimal theme by <a href="https://github.com/orderedlist/minimal">orderedlist</a></p>
 			<p class="small-text"><a href="https://github.com/emmetio/livestyle-web/tree/master/src/documents<%= @document.url %>.md">View page source on GitHub</a></p>
 		</footer>
 	</div>

@@ -1,0 +1,19 @@
+language: node_js
+node_js:
+- '0.10'
+env:
+  global:
+  - secure: gektKpdjRS+MHPOZtgqvNEDLXub3HoKOc6BGz56SfX7Z+VntyIldVH9bELS85o6BCwZj+gXZ7cjmkINZ9njrV5cEW8LtbL4lKEYSLVs2I/ACSzcsX+WEAPc5ar0Ki26fb/5awleJSHnJW3QaS8TOstZgZWznwGfWpv0rZBIj0XU=
+  - secure: tj7zmYV8LQTgK7yCCNV/GQ8NGRYXSoNIRsMLF0+u8x3a5nV3IVF/fmSh5enJREs491IAJJ2b+phonNZNgw9UgxPFJQ3PHTmZxj1smTghZI11W2TYNW1ykQrOU+zoWwiEsJlwzClY6sxdOHC1SjcSCTEjrrwN4Xg/MF5Nq+FXyVQ=
+  - secure: ZZzeUplpJmKR48PAXdUchRqKIuEjABfhaL9WjxqBHZxljOBeLxD4Q8v8gJM1f2m5M9AY9+gqHDQNrLuYDX0HAQxsZmGED6uSRMUbDG/ONpci59xve3AM0m8r2V7cLSD+MC0RQVwhUSKbQvc1cWIERUZeVbzrqDeuYks7CYGbW5g=
+addons:
+  ssh_known_hosts:
+  - 128.199.54.7
+script: ./node_modules/.bin/docpad generate --silent --env production
+branches:
+  only:
+  - dev
+after_success:
+- sudo apt-get -y -qq install sshpass
+- rsync -arlptzO --delete --stats --rsh="sshpass -p $DEPLOY_PASSWORD ssh -l $DEPLOY_USER"
+  ./out/ 128.199.54.7:$DEPLOY_DEST
