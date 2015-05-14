@@ -19,9 +19,7 @@ This is a new LiveStyle 0.9 public alpha release.
 
 ### Google Chrome Extension
 
-* Download [LiveStyle 0.9 Alpha](http://download.emmet.io/livestyle-alpha.crx)
-* In Chrome, go to Preferences > Extensions.
-* Drag’n’drop downloaded `livestyle-alpha.crx` file into Extensions page.
+Go to [Chrome Webstore](https://chrome.google.com/webstore/detail/livestyle-alpha/obipchajaiohjoohongibhgbfgchblei) and click on “Add to Chrome” button
 
 ### Sublime Text extension
 
